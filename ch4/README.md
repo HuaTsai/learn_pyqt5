@@ -1,0 +1,43 @@
+# Ch4 PyQt5 Basic Widgets
+
+## QMainWindow
+* methods
+    * addToolBar()
+    * centralWidget()
+    * menuBar()
+    * setCentralWidget()
+    * setStatusBar()
+    * statusBar()
+* [Q01_MainWin.py](Q01_MainWin.py)
+* [Q02_MainCenter.py](Q02_MainCenter.py)
+    * QDesktopWidget().screenGeometry()
+* [Q03_CloseMainWin.py](Q03_CloseMainWin.py)
+    * layout = QHBoxLayout()
+    * layout.addWidget()
+    * self.sender()
+    * QWidget().setLayout(layout)
+    * QApplication.instance().quit()
+
+## QWidget
+* methods
+    * x(), y(), pos()
+    * geometry(), geometry().x(), geometry().y()
+    * width() = geometry().width()
+    * height() = geometry().height()
+    * frameGeometry().width(), frameGeometry().height()
+    * resize(int width, int height)
+    * resize(QSize size)
+    * setFixedWidth(int width)
+    * setFixedHeight(int height)
+    * setFixedSize(int width, int height)
+    * setFixedSize(QSize size)
+    * setGeometry(int x, int y, int width, int height)
+    * setGeometry(QRect rect)
+    * move(int x, int y)
+    * move(QPoint point)
+* [Q04_WidgetGeometry.py](Q04_WidgetGeometry.py)
+* [Q05_MainWin2.py](Q05_MainWin2.py)
+* [Q06_Icon.py](Q06_Icon.py)
+* [Q07_ToolTip.py](Q07_ToolTip.py)
+    * QToolTip.setFont(QFont font)
+    * QWidget().setToolTip(string)
