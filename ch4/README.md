@@ -41,3 +41,32 @@
 * [Q07_ToolTip.py](Q07_ToolTip.py)
     * QToolTip.setFont(QFont font)
     * QWidget().setToolTip(string)
+
+## QLabel
+* inherit from QFrame
+* methods
+    * setAlignment()
+        * Qt.AlignLeft
+        * Qt.AlignRight
+        * Qt.AlignCenter
+        * Qt.AlignJustify
+        * Qt.AlignTop
+        * Qt.AlignBottom
+        * Qt.AlignVCenter
+    * setIndent()
+    * setPixmap()
+    * text()
+    * setText()
+    * selectedText()
+    * setBuddy()
+    * setWordWrap()
+* signal
+    * linkActivated
+    * linkHovered
+* [Q08_Label.py](Q08_Label.py)
+    * label().setAutoFillBackground(True)
+    * QPalette().setColor(QPalette.Window, Qt.blue)
+    * QLabel().setPalette()
+    * label().setTextInteractionFlags(Qt.TextSelectableByMouse)
+    * QVBoxLayout().addStretch()
+* [Q09_Label2.py](Q09_Label2.py)
