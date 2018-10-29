@@ -135,3 +135,75 @@
     * reg = QRegExp('[a-zA-Z0-9]+$')
     * QRegExpValidator().setRegExp(reg)
 * [Q12_LineEdit3.py](Q12_LineEdit3.py)
+* [Q13_LineEdit4.py](Q13_LineEdit4.py)
+
+## QTextEdit
+* methods
+    * setPlainText()
+    * toPlainText()
+    * setHtml()
+    * toHtml()
+    * clear()
+* [Q14_TextEdit.py](Q14_TextEdit.py)
+
+## QAbstractButton
+* methods
+    * isdown()
+    * isChecked()
+    * isEnable()
+    * isCheckAble()
+    * setAutoRepeat()
+* signal
+    * Pressed
+    * Released
+    * Clicked
+    * Toggled
+
+## QPushButton
+* mothods
+    * setCheckable()
+    * toggle()
+    * setIcon()
+    * setEnabled()
+    * isChecked()
+    * setDefault()
+    * setText()
+    * text()
+* [Q15_PushButton.py](Q15_PushButton.py)
+
+## QRadioButton
+* methods
+    * setCheckable()
+    * isChecked()
+    * setText()
+    * text()
+* [Q16_RadioButton.py](Q16_RadioButton.py)
+
+## QCheckBox
+* methods
+    * setChecked()
+    * setText()
+    * text()
+    * isChecked()
+    * setTriState()
+        * Qt.Checked: 2
+        * Qt.PartiallyChecked: 1
+        * Qt.Unchecked: 0
+* [Q17_CheckBox.py](Q17_CheckBox.py)
+    * QGroupBox()
+
+## QComboBox
+* methods
+    * addItem()
+    * addItems()
+    * clear()
+    * count()
+    * currentText()
+    * itemText()
+    * currentIndex()
+    * setItemText()
+* signal
+    * Activated
+    * currentIndexChanged
+    * highlighted
+* [Q18_ComboBox.py](Q18_ComboBox.py)
