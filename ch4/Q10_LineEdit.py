@@ -6,13 +6,12 @@ from PyQt5.QtWidgets import QApplication, QLineEdit, QWidget, QFormLayout
 class MainWin(QWidget):
     def __init__(self, parent=None):
         super(MainWin, self).__init__(parent)
-        self.setWindowTitle('QLineEdit範例')
 
         flo = QFormLayout()
         pNormalLineEdit = QLineEdit()
         pNoEchoLineEdit = QLineEdit()
         pPasswordLineEdit = QLineEdit()
-        pPasswordEchoOnEditLineEdit = QLineEdit() 
+        pPasswordEchoOnEditLineEdit = QLineEdit()
 
         flo.addRow('Normal', pNormalLineEdit)
         flo.addRow('NoEcho', pNoEchoLineEdit)
@@ -30,6 +29,7 @@ class MainWin(QWidget):
         pPasswordEchoOnEditLineEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
 
         self.setLayout(flo)
+        self.setWindowTitle('QLineEdit範例')
 
 
 if __name__ == '__main__':

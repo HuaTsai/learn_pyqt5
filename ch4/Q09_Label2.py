@@ -4,10 +4,9 @@ from PyQt5.QtWidgets import QApplication, QLabel, QLineEdit, QPushButton, QGridL
 
 
 class MainWin(QWidget):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent=None):
+        super(MainWin, self).__init__(parent)
 
-        self.setWindowTitle('QLabel範例')
         name_lb1 = QLabel('&Name', self)
         name_ed1 = QLineEdit(self)
         name_lb1.setBuddy(name_ed1)
@@ -25,10 +24,11 @@ class MainWin(QWidget):
         layout.addWidget(name_ed2, 1, 1, 1, 2)
         layout.addWidget(btn_ok, 2, 1)
         layout.addWidget(btn_cancel, 2, 2)
-        
+        self.setWindowTitle('QLabel範例')
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    win = MainWin()    
+    win = MainWin()
     win.show()
     sys.exit(app.exec_())

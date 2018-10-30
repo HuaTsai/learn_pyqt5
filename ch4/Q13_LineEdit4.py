@@ -8,7 +8,6 @@ from PyQt5.QtCore import Qt
 class MainWin(QWidget):
     def __init__(self, parent=None):
         super(MainWin, self).__init__(parent)
-        self.setWindowTitle('QLineEdit範例')
 
         flo = QFormLayout()
         e1 = QLineEdit()
@@ -37,6 +36,7 @@ class MainWin(QWidget):
         flo.addRow('Read Only', e6)
 
         self.setLayout(flo)
+        self.setWindowTitle('QLineEdit範例')
 
     def textchanged(self, text):
         print('輸入的內容為' + text)

@@ -6,8 +6,8 @@ from PyQt5.QtGui import QPixmap, QPalette
 
 
 class MainWin(QWidget):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent=None):
+        super(MainWin, self).__init__(parent)
 
         label1 = QLabel(self)
         label2 = QLabel(self)
@@ -61,6 +61,6 @@ def link_clicked():
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    win = MainWin()    
+    win = MainWin()
     win.show()
     sys.exit(app.exec_())

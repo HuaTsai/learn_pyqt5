@@ -6,7 +6,6 @@ from PyQt5.QtWidgets import QApplication, QLineEdit, QWidget, QFormLayout
 class MainWin(QWidget):
     def __init__(self, parent=None):
         super(MainWin, self).__init__(parent)
-        self.setWindowTitle('QLineEdit的輸入遮罩範例')
 
         flo = QFormLayout()
         pIPLineEdit = QLineEdit()
@@ -25,6 +24,7 @@ class MainWin(QWidget):
         flo.addRow('許可證遮罩', pLicenseLineEdit)
 
         self.setLayout(flo)
+        self.setWindowTitle('QLineEdit的輸入遮罩範例')
 
 
 if __name__ == '__main__':

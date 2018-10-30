@@ -1,5 +1,26 @@
 # Ch4 PyQt5 Basic Widgets
 
+## Table of Contents
+- [Ch4 PyQt5 Basic Widgets](#ch4-pyqt5-basic-widgets)
+    - [Table of Contents](#table-of-contents)
+    - [QMainWindow](#qmainwindow)
+    - [QWidget](#qwidget)
+    - [QLabel](#qlabel)
+    - [QLineEdit](#qlineedit)
+    - [QTextEdit](#qtextedit)
+    - [QAbstractButton](#qabstractbutton)
+    - [QPushButton](#qpushbutton)
+    - [QRadioButton](#qradiobutton)
+    - [QCheckBox](#qcheckbox)
+    - [QComboBox](#qcombobox)
+    - [QSpinBox/QDoubleSpinBox](#qspinboxqdoublespinbox)
+    - [QSlider](#qslider)
+    - [QDialog](#qdialog)
+    - [QMessageBox](#qmessagebox)
+    - [QInputDialog](#qinputdialog)
+    - [QFontDialog](#qfontdialog)
+    - [QFileDialog](#qfiledialog)
+
 ## QMainWindow
 * methods
     * addToolBar()
@@ -207,3 +228,93 @@
     * currentIndexChanged
     * highlighted
 * [Q18_ComboBox.py](Q18_ComboBox.py)
+
+## QSpinBox/QDoubleSpinBox
+* methods
+    * setMinimum()
+    * setMaximum()
+    * setRange()
+    * setValue()
+    * Value()
+    * singleStep()
+* signal
+    * valueChanged
+* [Q19_SpinBox.py](Q19_SpinBox.py)
+
+## QSlider
+* methods
+    * setMinimum()
+    * setMaximum()
+    * setSingleStep()
+    * setValue()
+    * value()
+    * setTickInterval()
+    * setTickPosition()
+        * QSlider.NoTicks
+        * QSlider.TicksBothSides
+        * QSlider.TicksAbove
+        * QSlider.TicksBelow
+        * QSlider.TicksLeft
+        * QSlider.TicksRight
+* signal
+    * valueChanged
+    * sliderPressed
+    * sliderMoved
+    * sliderReleased
+* [Q20_Slider.py](Q20_Slider.py)
+
+## QDialog
+* methods
+    * setWindowTitle()
+    * setWindowModality()
+        * Qt.NonModal
+        * Qt.WindowModal
+        * Qt.ApplicationModal
+* [Q21_Dialog.py](Q21_Dialog.py)
+
+## QMessageBox
+* methods
+    * information()
+    * question()
+    * warning()
+    * critical()
+    * about()
+    * setTitle()
+    * setText()
+    * setIcon()
+* standard buttons
+    * QMessage.OK
+    * QMessage.Cancel
+    * QMessage.Yes
+    * QMessage.No
+    * QMessage.Abort
+    * QMessage.Retry
+    * QMessage.Ignore
+* [Q22_MessageBox.py](Q22_MessageBox.py)
+
+## QInputDialog
+* methods
+    * getInt()
+    * getDouble()
+    * getText()
+    * getItem()
+* [Q23_InputDialog.py](Q23_InputDialog.py)
+
+## QFontDialog
+* methods
+    * getFont()
+* [Q24_FontDialog.py](Q24_FontDialog.py)
+
+## QFileDialog
+* methods
+    * getOpenFileName()
+    * getSaveFileName()
+    * setFileMode()
+        * QFileDialog.AnyFile
+        * QFileDialog.ExistingFile
+        * QFileDialog.Directory
+        * QFileDialog.ExistingFiles
+    * setFilter()
+    * selectedFiles()
+* [Q25_FileDialog.py](Q25_FileDialog.py)
+    * QFileDialog().setFilter(QDir.Files)

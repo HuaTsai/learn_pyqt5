@@ -32,7 +32,7 @@ class MainWin(QWidget):
                 print(btn.text() + ' is selected')
             else:
                 print(btn.text() + ' is deselected')
-        
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

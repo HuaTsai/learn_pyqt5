@@ -3,10 +3,9 @@ import sys
 from PyQt5.QtWidgets import QMainWindow, QHBoxLayout, QPushButton, QApplication, QWidget
 
 
-class MainWindow(QMainWindow):
+class MainWin(QMainWindow):
     def __init__(self, parent=None):
-        super(MainWindow, self).__init__(parent)
-        self.setWindowTitle('關閉主視窗範例')
+        super(MainWin, self).__init__(parent)
         self.button1 = QPushButton('關閉主視窗')
         self.button1.clicked.connect(self.onButtonClick)
 
@@ -16,6 +15,7 @@ class MainWindow(QMainWindow):
         main_frame = QWidget()
         main_frame.setLayout(layout)
         self.setCentralWidget(main_frame)
+        self.setWindowTitle('關閉主視窗範例')
 
     def onButtonClick(self):
         sender = self.sender()
@@ -26,6 +26,6 @@ class MainWindow(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    win = MainWindow()
+    win = MainWin()
     win.show()
     sys.exit(app.exec_())
