@@ -20,6 +20,7 @@
     - [QInputDialog](#qinputdialog)
     - [QFontDialog](#qfontdialog)
     - [QFileDialog](#qfiledialog)
+    - [QPainter](#qpainter)
 
 ## QMainWindow
 * methods
@@ -318,3 +319,29 @@
     * selectedFiles()
 * [Q25_FileDialog.py](Q25_FileDialog.py)
     * QFileDialog().setFilter(QDir.Files)
+
+## QPainter
+* methods
+    * begin()
+    * drawArc()
+    * drawEllipse()
+    * drawLine()
+    * drawPixmap()
+    * drawPolygon()
+    * drawRect()
+    * drawText()
+    * fillRect()
+    * setBrush()
+        * Qt.NoPen
+        * Qt.SolidLine
+        * Qt.DashLine
+        * Qt.DotLine
+        * Qt.DashDotLine
+        * Qt.DashDotDotLine
+        * Qt.MPenStyle
+    * setPen()
+    * setFont()
+    * override paintEvent(event)
+* [Q26_DrawText.py](Q26_DrawText.py)
+* [Q27_DrawPoints.py](Q27_DrawPoints.py)
+    * setPen(Qt.red)
