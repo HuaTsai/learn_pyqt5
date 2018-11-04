@@ -21,6 +21,9 @@
     - [QFontDialog](#qfontdialog)
     - [QFileDialog](#qfiledialog)
     - [QPainter](#qpainter)
+    - [QPen](#qpen)
+    - [QBrush](#qbrush)
+    - [QPixmap](#qpixmap)
 
 ## QMainWindow
 * methods
@@ -332,6 +335,17 @@
     * drawText()
     * fillRect()
     * setBrush()
+    * setPen()
+    * setFont()
+* override paintEvent(event)
+* [Q26_DrawText.py](Q26_DrawText.py)
+* [Q27_DrawPoints.py](Q27_DrawPoints.py)
+    * setPen(Qt.red)
+
+## QPen
+* methods
+    * QPen(color, width(px), style)
+    * setStyle()
         * Qt.NoPen
         * Qt.SolidLine
         * Qt.DashLine
@@ -339,9 +353,28 @@
         * Qt.DashDotLine
         * Qt.DashDotDotLine
         * Qt.MPenStyle
-    * setPen()
-    * setFont()
-    * override paintEvent(event)
-* [Q26_DrawText.py](Q26_DrawText.py)
-* [Q27_DrawPoints.py](Q27_DrawPoints.py)
-    * setPen(Qt.red)
+        * Qt.CustomDashLine
+            * setDashPattern()
+* [Q28_DrawPen.py](Q28_DrawPen.py)
+
+## QBrush
+* methods
+    * QBrush(pattern)
+        * Qt.SolidPattern
+        * Qt.Dense1Pattern ~ Qt.Dense7Pattern
+        * Qt.DiagCrossPattern
+        * Qt.HorPattern
+        * Qt.VerPattern
+        * Qt.BDiagPattern
+* [Q29_DrawBrush.py](Q29_DrawBrush.py)
+
+## QPixmap
+* methods
+    * copy()
+    * fromImage()
+    * grabWidget()
+    * grabWindow()
+    * load()
+    * save()
+    * toImage()
+* [Q30_QPixmap.py](Q30_QPixmap.py)
