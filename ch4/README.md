@@ -24,6 +24,7 @@
     - [QPen](#qpen)
     - [QBrush](#qbrush)
     - [QPixmap](#qpixmap)
+    - [QDrag](#qdrag)
 
 ## QMainWindow
 * methods
@@ -377,4 +378,23 @@
     * load()
     * save()
     * toImage()
-* [Q30_QPixmap.py](Q30_QPixmap.py)
+* [Q30_Pixmap.py](Q30_Pixmap.py)
+
+## QDrag
+* MIME introduction
+* MIME methods
+    * text/plain: hasText(), text(), setText()
+    * text/html: hasHtml(), html(), setHtml()
+    * text/uri-list: hasUrls(), urls(), setUrls()
+    * image/*: hasImage(), imageData(), setImageData()
+    * application/x-color: hasColor(), colorData(), setColorData()
+* event: setDragEnabled(True)
+    * DragEnterEvent
+    * DragMoveEvent
+    * DragLeaveEvent
+    * DropEvent
+* [Q31_Drag.py](Q31_Drag.py)
+    * setAcceptDrops()
+    * dragEnterEvent()
+    * dropEvent()
+    * event.mimeData()
