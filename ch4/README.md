@@ -25,6 +25,7 @@
     - [QBrush](#qbrush)
     - [QPixmap](#qpixmap)
     - [QDrag](#qdrag)
+    - [QClipboard](#qclipboard)
 
 ## QMainWindow
 * methods
@@ -398,3 +399,15 @@
     * dragEnterEvent()
     * dropEvent()
     * event.mimeData()
+
+## QClipboard
+* methods
+    * clear()
+    * setImage()
+    * setMimeData()
+    * setPixmap()
+    * setText()
+    * text()
+* signal
+    * dataChanged
+* [Q32_Clipboard.py](Q32_Clipboard.py)
