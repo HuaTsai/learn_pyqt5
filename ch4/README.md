@@ -26,6 +26,8 @@
     - [QPixmap](#qpixmap)
     - [QDrag](#qdrag)
     - [QClipboard](#qclipboard)
+    - [QCalendar](#qcalendar)
+    - [QDateTimeEdit](#qdatetimeedit)
 
 ## QMainWindow
 * methods
@@ -411,3 +413,43 @@
 * signal
     * dataChanged
 * [Q32_Clipboard.py](Q32_Clipboard.py)
+
+## QCalendar
+* methods
+    * setDateRange()
+    * setFirstDayOfWeek()
+        * Qt.Monday
+        * Qt.Tuesday
+        * Qt.Wednesday
+        * Qt.Thursday
+        * Qt.Friday
+        * Qt.Saturday
+        * Qt.Sunday (default)
+    * setMinimumDate()
+    * setMaximumDate()
+    * setSelectedDate()
+    * minimumDate()
+    * maximumDate()
+    * setGridvisible()
+* [Q33_Calendar.py](Q33_Calendar.py)
+    * QDate.toString()
+
+## QDateTimeEdit
+* methods
+    * setDisplayFormat()
+        * yyyy, MM, dd, HH, mm, ss
+    * setMinimumDate()
+    * setMaximumDate()
+    * time()
+    * date()
+* signal
+    * dateChanged
+    * dateTimeChanged
+    * timeChanged
+* subclass
+    * QDateEdit
+    * QTimeEdit
+* QDateTimeEdit and QDateEdit can use setCalendarPopup(True)
+* [Q34_DateTimeEdit.py](Q34_DateTimeEdit.py)
+    * QDate.currentDate().addDays()
+* [Q35_DateTimeEdit2.py](Q35_DateTimeEdit2.py)
